@@ -42,7 +42,7 @@ public class GisaDAO {
                 vo.getSci() + "," + vo.getHist() + "," + vo.getTotal() + ",'" +
                 vo.getMgrCode() + "','" + vo.getAccCode() + "','" + vo.getLocCode() + "')";
             // 삽입 준비
-           stmt = con.createStatement();
+            stmt = con.createStatement();
             // 삽입
             affectedCount += stmt.executeUpdate(sql);
         }

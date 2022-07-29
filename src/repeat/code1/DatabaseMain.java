@@ -17,6 +17,7 @@ public class DatabaseMain {
     }
 
     public void testDelete() throws SQLException {
+
         GisaDAO dao = new GisaDAO();
         boolean flag = dao.deleteData(990002);
 
@@ -28,8 +29,7 @@ public class DatabaseMain {
     }
 
     private ArrayList<StudentVO> getFileData() throws IOException {
-        ArrayList<StudentVO> list = null;
-        list = new ArrayList<StudentVO>();
+        ArrayList<StudentVO> list = new ArrayList<StudentVO>();
 
         // 파일 읽어오기
         File file = new File("./Abc1115.csv");
@@ -37,6 +37,7 @@ public class DatabaseMain {
         // 한줄씩 읽기
         BufferedReader br = new BufferedReader(fr);
         //String data ="990001,addx, 17, 29, 16, 49, 43,154,C,A,C";
+
         String line = null;
         StudentVO vo = null;
 
